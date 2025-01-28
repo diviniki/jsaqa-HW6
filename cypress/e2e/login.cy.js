@@ -2,7 +2,7 @@ beforeEach(() => {
   cy.visit("/");
 })
 
-describe('happy path suite', { browser: 'edge' }, () => {
+describe('happy path suite', { browser: 'edge', env2: { viewportWidth: 736, viewportHeight: 414} }, () => {
   it("Should successfully login", () => {
     //cy.visit("/booksNode");
     cy.login("test@test.com", "test");
