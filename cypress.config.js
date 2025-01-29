@@ -15,12 +15,8 @@ module.exports = defineConfig({
     viewportWidth: 500,
     viewportHeight: 500,
   },
-  env1: {
-    viewportWidth: 1280,
-    viewportHeight: 720,
-  },
-  env2: {
-    viewportWidth: 736,
-    viewportHeight: 414,
+  env: {
+    viewportWidth: 2560,
+    viewportHeight: 1600,
   },
 });

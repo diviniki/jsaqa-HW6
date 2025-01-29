@@ -1,8 +1,11 @@
 beforeEach(() => {
+  //Cypress.env();
+  //cy.viewport(2560, 1600); //Large screen
+  cy.viewport('iphone-6'); //Iphone 6
   cy.visit("/");
 })
 
-describe('happy path suite', { browser: 'edge', env2: { viewportWidth: 736, viewportHeight: 414} }, () => {
+describe('happy path suite', { browser: 'edge', headless: false }, () => {
   it("Should successfully login", () => {
     //cy.visit("/booksNode");
     cy.login("test@test.com", "test");
