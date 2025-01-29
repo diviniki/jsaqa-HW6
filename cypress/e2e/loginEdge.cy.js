@@ -5,7 +5,7 @@ beforeEach(() => {
   cy.visit("/");
 })
 
-describe('happy path suite', { browser: 'edge', headless: false }, () => {
+describe('happy path suite', { browser: 'edge' }, () => {
   it("Should successfully login", () => {
     //cy.visit("/booksNode");
     cy.login("test@test.com", "test");

@@ -1,8 +1,9 @@
 beforeEach(() => {
+  cy.viewport(2560, 1600);
   cy.visit("/");
 })
 
-describe('happy path suite', { browser: 'chrome', env1: { viewportWidth: 736, viewportHeight: 414} }, () => {
+describe('happy path suite', { browser: 'chrome' }, () => {
   it("Should successfully login", () => {
     //cy.visit("/booksNode");
     cy.login("test@test.com", "test");
